@@ -1,55 +1,31 @@
-$border: 1px solid #ccc;
-
 body {
-  font-family: "Roboto", sans-serif;
-}
-
-.container {
-  padding-top: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-}
-
-h1 {
-  text-align: center;
-}
-
-.logoo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  //   background-image: url("./images/webpack-logo.png");
-  background-size: cover;
-  margin: 0 auto;
-  img {
-    height: 400px;
-    width: 400px;
-  }
-}
-
-.card {
-  padding: 1rem;
-  border-radius: 5px;
-  margin-top: 1rem;
-  border: $border;
-  width: 100%;
-
-  h2 {
-    text-align: center;
-    color: darkred;
-  }
-}
-
-header {
-  nav {
-    text-align: center;
-  }
+  background-color: #43bee5;
+  background-image: url(./images/zig-zag.svg);
 }
 
 footer {
-  p {
-    text-align: center;
+  .wave-container {
+    height: 40vh;
+    background-color: #41b853;
+    position: relative;
+  }
+
+  .wave-container::before {
+    content: "";
+    width: 100%;
+    height: 51px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 36vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  105' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 77L50 72C100 68 200 58 300 39C400 20 500 -8 600 1C700 11 800 58 900 77C1000 96 1100 87 1150 82L1200 77V106H1150C1100 106 1000 106 900 106C800 106 700 106 600 106C500 106 400 106 300 106C200 106 100 106 50 106H0V77Z' fill='%23efa500'/></svg>");
+  }
+
+  @media (max-width: 850px) {
+    .wave-container::before {
+      height: 25.5px;
+    }
   }
 }
