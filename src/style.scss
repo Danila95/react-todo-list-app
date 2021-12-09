@@ -1,17 +1,23 @@
-// common.blocks
+// common.components
 
-// block common
+// components common
 @import "~normalize.css";
 @import "components/common.components/common/libs/bootstrap@5.0.2/bootstrap.min.css";
 @import "fonts/@fortawesome/fontawesome-free/css/all.min.css";
 @import "components/common.components/common/colors";
 @import "components/common.components/common/fonts";
 @import "components/common.components/common/main";
-// block app
+// component app
 @import "components/common.components/app/app";
 
-// desktop.blocks
+// desktop.components
 @import "components/desktop.components/common/media";
 
-// touch.blocks
+// touch.components
 @import "components/touch.components/common/media";
+
+// component CheckList
+@import "components/check-list/CheckList";
+
+// component SelectFilter
+@import "components/select-filter/SelectFilter";

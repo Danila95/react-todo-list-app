@@ -1,9 +1,10 @@
+import Logo from "../../../images/logo.png";
+import "./header.scss";
+
 const Header = () => {
   return (
     <header>
-      <nav>
-        <span>Здесь будет header / Here will be the header</span>
-      </nav>
+      <img src={Logo} alt="" />
     </header>
   );
 };

@@ -1,0 +1,15 @@
+// @import "../common.components/common/colors.scss";
+
+.select-filter {
+  margin-top: 40px;
+
+  .select-wrapper {
+    background: white;
+
+    & + label {
+      top: -42px !important;
+      color: $orange-1;
+      // color: white;
+    }
+  }
+}
